@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ds.test.impl", "ds.test.impl\ds.test.impl.csproj", "{72B1BD4F-F379-4644-AA78-EFBB5C44523C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{430734BE-A3E8-4140-BD16-70F03C51A16D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{5FC81B4B-61BD-4689-841B-CD5D83C6E23E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		{72B1BD4F-F379-4644-AA78-EFBB5C44523C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72B1BD4F-F379-4644-AA78-EFBB5C44523C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72B1BD4F-F379-4644-AA78-EFBB5C44523C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{430734BE-A3E8-4140-BD16-70F03C51A16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{430734BE-A3E8-4140-BD16-70F03C51A16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{430734BE-A3E8-4140-BD16-70F03C51A16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{430734BE-A3E8-4140-BD16-70F03C51A16D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC81B4B-61BD-4689-841B-CD5D83C6E23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC81B4B-61BD-4689-841B-CD5D83C6E23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC81B4B-61BD-4689-841B-CD5D83C6E23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC81B4B-61BD-4689-841B-CD5D83C6E23E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,7 @@ namespace ds.test.impl.OperationPlugins {
     /// </summary>
     internal class DivisionPlugin : PluginBase {
         public override string Version => "1.0.0";
-        public override Image Image => null;
+        public override Image Image => Image.FromFile("PluginsImage\\dividing.jpg");
         public override string Description => "Plugin for division numbers. Rounding down.";
 
         /// <summary>
@@ -21,7 +21,7 @@ namespace ds.test.impl.OperationPlugins {
             if (input2 == 0) {
                 throw new ArgumentException("Denominator can't be 0");
             }
-            return checked(input1 / input2);
+            return input1 / input2;
         }
     }
 }

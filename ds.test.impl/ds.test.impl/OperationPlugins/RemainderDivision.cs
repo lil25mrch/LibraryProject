@@ -7,11 +7,11 @@ namespace ds.test.impl.OperationPlugins {
     /// </summary>
     internal class RemainderDivision : PluginBase {
         public override string Version => "1.0.0";
-        public override Image Image => null;
+        public override Image Image => Image.FromFile("PluginsImage\\remainder.jpg");
         public override string Description => "Plugin for dividing two numbers with the remainder";
 
         /// <summary>
-        /// Найти остаток от деления двух чисел
+        /// Остаток от деления двух чисел
         /// </summary>
         /// <param name="input1">Числитель</param>
         /// <param name="input2">Знаменатель</param>

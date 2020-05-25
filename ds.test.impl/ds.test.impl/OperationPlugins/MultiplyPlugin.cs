@@ -6,7 +6,7 @@ namespace ds.test.impl.OperationPlugins {
     /// </summary>
     internal class MultiplyPlugin : PluginBase {
         public override string Version => "1.0.0";
-        public override Image Image => null;
+        public override Image Image => Image.FromFile("PluginsImage\\multiply.jpg");
         public override string Description => "Plugin for multiply numbers";
 
         /// <summary>

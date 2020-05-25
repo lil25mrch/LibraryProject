@@ -9,19 +9,19 @@ namespace ds.test.impl {
     /// </summary>
     public static class Plugins {
         /// <summary>
-        /// Словарь для хранения названий плагинов и их интерфейсов
+        /// Словарь экземпляров плагинов
         /// </summary>
         private static readonly Dictionary<string, IPlugin> _pluginsByName = new Dictionary<string, IPlugin>();
 
         /// <summary>
-        /// Добавление экземпляров плагинов в словарь
+        /// Добавление экземпляров в словарь
         /// </summary>
         static Plugins() {
             var plugins = new List<IPlugin> {
                 new DivisionPlugin(),
                 new MinusPlugin(),
                 new MultiplyPlugin(),
-                new SummPlagin(),
+                new SummPlugin(),
                 new PowerPlugin(),
                 new RemainderDivision(),
                 new LogarithmPlugin(),
@@ -40,12 +40,12 @@ namespace ds.test.impl {
         public static int PluginsCount => _pluginsByName.Count;
 
         /// <summary>
-        /// Массив названий плагинов
+        /// Массив имен плагинов
         /// </summary>
         public static string[] GetPluginNames => _pluginsByName.Keys.ToArray();
 
         /// <summary>
-        /// Получить плагин из словаря по названию
+        /// Получить плагин по названию
         /// </summary>
         /// <param name="pluginName">Название плагина</param>
         /// <returns>Плагин</returns>

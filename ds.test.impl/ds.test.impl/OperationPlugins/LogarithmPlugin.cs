@@ -7,7 +7,7 @@ namespace ds.test.impl.OperationPlugins {
     /// </summary>
     internal class LogarithmPlugin : PluginBase {
         public override string Version => "1.0.0";
-        public override Image Image => null;
+        public override Image Image => Image.FromFile("PluginsImage\\log.png");
         public override string Description => "Plugin for logarithm numbers. Rounding down.";
 
         /// <summary>
@@ -21,7 +21,7 @@ namespace ds.test.impl.OperationPlugins {
             if (input2 < 0 || input1 < 0 ) {
                 throw new ArgumentException ("Values for logarithm cannot be negative");
             }
-            return checked((int)Math.Log(input1, input2));
+            return (int)Math.Log(input1, input2);
         }
     }
 }

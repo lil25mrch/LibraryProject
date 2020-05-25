@@ -4,9 +4,9 @@ namespace ds.test.impl.OperationPlugins {
     /// <summary>
     /// Плагин сложение
     /// </summary>
-    internal class SummPlagin : PluginBase {
+    internal class SummPlugin : PluginBase {
         public override string Version => "1.0.0";
-        public override Image Image => null;
+        public override Image Image => Image.FromFile("PluginsImage\\plus.jpg");
         public override string Description => "Plugin for summing numbers.";
 
         /// <summary>

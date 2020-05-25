@@ -7,8 +7,8 @@ namespace ds.test.impl.OperationPlugins {
     /// </summary>
     internal class MinPlugin : PluginBase {
         public override string Version => "1.0.0";
-        public override Image Image => null;
-        public override string Description => "Plugin for summing numbers.";
+        public override Image Image => Image.FromFile("PluginsImage\\min.png");
+        public override string Description => "Plugin for determining a smaller number.";
 
         /// <summary>
         /// Определить меньшее число
@@ -17,7 +17,7 @@ namespace ds.test.impl.OperationPlugins {
         /// <param name="input2">Второе число</param>
         /// <returns>Меньшее число</returns>
         public override int Run(int input1, int input2) {
-            return checked(Math.Min(input1, input2));
+            return Math.Min(input1, input2);
         }
     }
 }
