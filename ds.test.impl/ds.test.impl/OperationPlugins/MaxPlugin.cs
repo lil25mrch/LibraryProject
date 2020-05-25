@@ -1,13 +1,14 @@
 using System;
-using System.Drawing;
 
 namespace ds.test.impl.OperationPlugins {
     /// <summary>
     /// Плагин определения большего числа
     /// </summary>
     internal class MaxPlugin : PluginBase {
+        public MaxPlugin()
+            : base("PluginsImage\\max.jpg") { }
+
         public override string Version => "1.0.0";
-        public override Image Image => Image.FromFile("PluginsImage\\max.jpg");
         public override string Description => "Plugin for determining a larger number.";
 
         /// <summary>

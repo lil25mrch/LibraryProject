@@ -1,12 +1,12 @@
-using System.Drawing;
-
 namespace ds.test.impl.OperationPlugins {
     /// <summary>
     /// Плагин умножение
     /// </summary>
     internal class MultiplyPlugin : PluginBase {
+        public MultiplyPlugin()
+            : base("PluginsImage\\multiply.jpg") { }
+
         public override string Version => "1.0.0";
-        public override Image Image => Image.FromFile("PluginsImage\\multiply.jpg");
         public override string Description => "Plugin for multiply numbers";
 
         /// <summary>

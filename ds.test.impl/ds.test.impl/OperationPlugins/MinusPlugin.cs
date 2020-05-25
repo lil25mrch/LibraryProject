@@ -1,12 +1,12 @@
-using System.Drawing;
-
 namespace ds.test.impl.OperationPlugins {
     /// <summary>
     /// Плагин вычитание
     /// </summary>
     internal class MinusPlugin : PluginBase {
+        public MinusPlugin()
+            : base("PluginsImage\\minus.jpg") { }
+
         public override string Version => "1.0.0";
-        public override Image Image => Image.FromFile("PluginsImage\\minus.jpg");
         public override string Description => "Plugin for minus numbers";
 
         /// <summary>

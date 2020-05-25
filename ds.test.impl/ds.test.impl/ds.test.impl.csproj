@@ -42,7 +42,7 @@
     <Compile Include="IPlugin.cs" />
     <Compile Include="OperationPlugins\MaxPlugin.cs" />
     <Compile Include="OperationPlugins\MinPlugin.cs" />
-    <Compile Include="PluginBase.cs" />
+    <Compile Include="OperationPlugins\PluginBase.cs" />
     <Compile Include="Plugins.cs" />
     <Compile Include="OperationPlugins\DivisionPlugin.cs" />
     <Compile Include="OperationPlugins\LogarithmPlugin.cs" />

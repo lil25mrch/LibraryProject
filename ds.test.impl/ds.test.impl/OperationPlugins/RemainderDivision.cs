@@ -1,13 +1,14 @@
 using System;
-using System.Drawing;
 
 namespace ds.test.impl.OperationPlugins {
     /// <summary>
     /// Плагин остаток от деления
     /// </summary>
     internal class RemainderDivision : PluginBase {
+        public RemainderDivision()
+            : base("PluginsImage\\remainder.jpg") { }
+
         public override string Version => "1.0.0";
-        public override Image Image => Image.FromFile("PluginsImage\\remainder.jpg");
         public override string Description => "Plugin for dividing two numbers with the remainder";
 
         /// <summary>

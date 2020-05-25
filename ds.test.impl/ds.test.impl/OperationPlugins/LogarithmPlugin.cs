@@ -1,13 +1,15 @@
 using System;
-using System.Drawing;
 
 namespace ds.test.impl.OperationPlugins {
     /// <summary>
     /// Плагин логарифм
     /// </summary>
     internal class LogarithmPlugin : PluginBase {
+        public LogarithmPlugin()
+            : base("PluginsImage\\log.png") { }
+
         public override string Version => "1.0.0";
-        public override Image Image => Image.FromFile("PluginsImage\\log.png");
+
         public override string Description => "Plugin for logarithm numbers. Rounding down.";
 
         /// <summary>
@@ -18,10 +20,11 @@ namespace ds.test.impl.OperationPlugins {
         /// <returns>Результат логарифмирования</returns>
         /// <exception cref="ArgumentException">Ошибка при введении основания меньше 0</exception>
         public override int Run(int input1, int input2) {
-            if (input2 < 0 || input1 < 0 ) {
-                throw new ArgumentException ("Values for logarithm cannot be negative");
+            if (input2 < 0 || input1 < 0) {
+                throw new ArgumentException("Values for logarithm cannot be negative");
             }
-            return (int)Math.Log(input1, input2);
+
+            return (int) Math.Log(input1, input2);
         }
     }
 }

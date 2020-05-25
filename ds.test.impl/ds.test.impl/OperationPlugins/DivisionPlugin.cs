@@ -1,13 +1,14 @@
 using System;
-using System.Drawing;
 
 namespace ds.test.impl.OperationPlugins {
     /// <summary>
     /// Плагин деление
     /// </summary>
     internal class DivisionPlugin : PluginBase {
+        public DivisionPlugin()
+            : base("PluginsImage\\dividing.jpg") { }
+
         public override string Version => "1.0.0";
-        public override Image Image => Image.FromFile("PluginsImage\\dividing.jpg");
         public override string Description => "Plugin for division numbers. Rounding down.";
 
         /// <summary>
@@ -21,6 +22,7 @@ namespace ds.test.impl.OperationPlugins {
             if (input2 == 0) {
                 throw new ArgumentException("Denominator can't be 0");
             }
+
             return input1 / input2;
         }
     }

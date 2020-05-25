@@ -1,12 +1,12 @@
-using System.Drawing;
-
 namespace ds.test.impl.OperationPlugins {
     /// <summary>
     /// Плагин сложение
     /// </summary>
     internal class SummPlugin : PluginBase {
+        public SummPlugin()
+            : base("PluginsImage\\plus.jpg") { }
+
         public override string Version => "1.0.0";
-        public override Image Image => Image.FromFile("PluginsImage\\plus.jpg");
         public override string Description => "Plugin for summing numbers.";
 
         /// <summary>

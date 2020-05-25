@@ -1,13 +1,14 @@
 using System;
-using System.Drawing;
 
 namespace ds.test.impl.OperationPlugins {
     /// <summary>
     /// Плагин определения меньшего числа
     /// </summary>
     internal class MinPlugin : PluginBase {
+        public MinPlugin()
+            : base("PluginsImage\\min.png") { }
+
         public override string Version => "1.0.0";
-        public override Image Image => Image.FromFile("PluginsImage\\min.png");
         public override string Description => "Plugin for determining a smaller number.";
 
         /// <summary>
@@ -21,4 +22,3 @@ namespace ds.test.impl.OperationPlugins {
         }
     }
 }
-
